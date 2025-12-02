@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - MyShop</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+<h1>🛍 MyShop</h1>
+
+<div class="header-right">
+  <span id="welcome-msg" style="display:none; margin-left:8px; font-weight:600;"></span>
+  <!-- <a href="#" id="logout-link" style="display:none; margin-left:8px;">Logout</a> -->
+</div>
+<!-- <a href="#" id="logout-link" style="display:none; margin-left:8px;">Logout</a> -->
+</nav>
+</header>
+
+<section class="login-container">
+  <div class="login-card">
+  
+    <form id="login-form" class="login-form" autocomplete="off">
+      <div class="form-group">
+        <label for="username">Username</label>
+        <input id="username" name="username" required placeholder="Enter username">
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input id="password" name="password" type="password" required placeholder="Enter password">
+      </div>
+      <button type="submit" class="signin-button">Sumit</button>
+    </form>
+
+    
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2025 My Shop. All Rights Reserved</p>
+</footer>
+
+<script src="auth.js"></script>
+</body>
+</html>

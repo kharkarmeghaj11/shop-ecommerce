@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shopping Cart - MyShop Electronics</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+<h1>🛍 MyShop</h1>
+<nav>
+<a href="index.html">Home</a> |
+<a href="products.html">Products</a> |
+<a href="cart.html">Cart</a> |
+<a href="contact.html">Contact Us</a>
+</nav>
+<div class="header-right">
+  <span id="welcome-msg" style="display:none; margin-left:8px; font-weight:600;"></span>
+  <a href="#" id="logout-link" style="display:none; margin-left:8px;">Logout</a>
+</div>
+</header>
+
+<section class="products-container">
+  <div class="products-header">
+    <h1>Your Shopping Cart</h1>
+    <p>Review your selected items before checkout</p>
+  </div>
+
+  <div class="cart-container">
+    <div class="cart-items">
+      <!-- Cart items will be rendered here by cart.js -->
+      </div>
+
+    <div class="cart-summary">
+      <h2>Order Summary</h2>
+      <div class="summary-item">
+        <span>Subtotal</span>
+        <span id="subtotal-value">$0.00</span>
+      </div>
+      <div class="summary-item">
+        <span>Shipping</span>
+        <span id="shipping-value">$0.00</span>
+      </div>
+      <div class="summary-item">
+        <span>Tax</span>
+        <span id="tax-value">$0.00</span>
+      </div>
+      <div class="summary-total">
+        <strong>Total</strong>
+        <strong id="total-value">$0.00</strong>
+      </div>
+      <button class="checkout-button">Proceed to Checkout</button>
+    </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2025 My Shop. All Rights Reserved</p>
+</footer>
+<script src="auth.js"></script>
+</body>
+</html>

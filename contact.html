@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us - MyShop Electronics</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+<h1>🛍 MyShop</h1>
+<nav>
+<a href="index.html">Home</a> |
+<a href="products.html">Products</a> |
+<a href="cart.html">Cart</a> |
+<a href="contact.html">Contact Us</a>
+</nav>
+<div class="header-right">
+  <span id="welcome-msg" style="display:none; margin-left:8px; font-weight:600;"></span>
+  <a href="#" id="logout-link" style="display:none; margin-left:8px;">Logout</a>
+</div>
+</header>
+
+<section class="products-container">
+  <div class="products-header">
+    <h1>Contact Us</h1>
+    <p>We love to hear from you! Send us a message.</p>
+  </div>
+
+  <div class="contact-container">
+    <div class="contact-info">
+      <h2>Get In Touch</h2>
+      <div class="contact-method">
+        <h3>📍 Address</h3>
+        <p>KL University<br>
+        Guntur, AP 522001<br>
+        India</p>
+      </div>
+      
+      <div class="contact-method">
+        <h3>📞 Phone</h3>
+        <p>+91 7765975881</p>
+      </div>
+      
+      <div class="contact-method">
+        <h3>✉️ Email</h3>
+        <p>satyajeetshivanshu@gmail.com</p>
+      </div>
+      
+      <div class="contact-method">
+        <h3>🕒 Business Hours</h3>
+        <p>Monday - Friday: 9AM - 6PM<br>
+        Saturday: 10AM - 4PM<br>
+        Sunday: Closed</p>
+      </div>
+    </div>
+
+    <div class="contact-form">
+      <h2>Send us a Message</h2>
+      <form>
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" name="subject" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+        
+        <button type="submit" class="submit-button">Send Message</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2025 My Shop. All Rights Reserved</p>
+</footer>
+<script src="auth.js"></script>
+</body>
+</html>
