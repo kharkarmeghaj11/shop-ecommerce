@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MyShop - Electronics Store</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+<h1>🛍 MyShop</h1>
+<nav class="navbar navbar-expand-lg">
+  <div class="container-fluid">
+    <div class="navbar-nav">
+      <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+      <a class="nav-link" href="products.html">Products</a>
+      <a class="nav-link" href="cart.html">Cart</a>
+      <a class="nav-link" href="contact.html">Contact Us</a>
+    </div>
+  </div>
+</nav>
+<div class="header-right">
+  <span id="welcome-msg" style="display:none; margin-left:8px; font-weight:600;"></span>
+  <a href="#" id="logout-link" style="display:none; margin-left:8px;">Logout</a>
+</div>
+</header>
+
+<section class="hero text-center py-5">
+  <div class="container">
+    <h2 class="display-4 fw-bold mb-4">Welcome to MyShop Electronics</h2>
+    <p class="lead mb-4">Your one-stop destination for the latest electronic gadgets and devices</p>
+    <a href="products.html" class="btn btn-primary btn-lg cta-button px-4 py-3">Shop Now</a>
+  </div>
+</section>
+
+<section class="featured-products py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-5">Featured Products</h2>
+    <div class="row">
+      <div class="col-md-4 mb-4">
+        <div class="card product-card h-100 shadow-sm">
+          <img src="iphone-img1.jpeg" class="card-img-top" alt="Smartphone" style="height: 200px; object-fit: cover;">
+          <div class="card-body d-flex flex-column">
+            <h3 class="card-title">Iphone 17 pro</h3>
+            <p class="card-text fs-4 fw-bold text-primary mt-auto">$599.99</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card product-card h-100 shadow-sm">
+          <img src="hp-laptop.jpeg" class="card-img-top" alt="Laptop" style="height: 200px; object-fit: cover;">
+          <div class="card-body d-flex flex-column">
+            <h3 class="card-title">Gaming Laptop</h3>
+            <p class="card-text fs-4 fw-bold text-primary mt-auto">$1299.99</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card product-card h-100 shadow-sm">
+          <img src="headphone.jpg" class="card-img-top" alt="Headphones" style="height: 200px; object-fit: cover;">
+          <div class="card-body d-flex flex-column">
+            <h3 class="card-title">Wireless Headphones</h3>
+            <p class="card-text fs-4 fw-bold text-primary mt-auto">$199.99</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="bg-dark text-light py-4 mt-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h5>MyShop Electronics</h5>
+        <p>Your one-stop destination for the latest electronic gadgets and devices.</p>
+      </div>
+      <div class="col-md-3">
+        <h5>Quick Links</h5>
+        <ul class="list-unstyled">
+          <li><a href="index.html" class="text-light text-decoration-none">Home</a></li>
+          <li><a href="products.html" class="text-light text-decoration-none">Products</a></li>
+          <li><a href="cart.html" class="text-light text-decoration-none">Cart</a></li>
+          <li><a href="contact.html" class="text-light text-decoration-none">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3">
+        <h5>Contact Us</h5>
+        <address>
+          KL University<br>
+          Guntur, AP 522001<br>
+          India<br>
+          <abbr title="Phone">P:</abbr> +91 7765975881
+        </address>
+      </div>
+    </div>
+    <hr class="my-4">
+    <div class="text-center">
+      <p class="mb-0">&copy; 2025 MyShop Electronics. All Rights Reserved.</p>
+    </div>
+  </div>
+</footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  // Initialize tooltips
+  var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+  var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+    return new bootstrap.Tooltip(tooltipTriggerEl)
+  })
+</script>
+<script src="auth.js"></script>
+</html>
