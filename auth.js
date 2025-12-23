@@ -4,7 +4,7 @@
   const USER_KEY = 'myshop_user_v1';
   const LOGIN_TIME_KEY = 'myshop_login_time_v1';
   const CART_KEY = 'myshop_cart_v1';
-  const SESSION_TIMEOUT = 2 * 60 * 1000; // 2 minutes in milliseconds
+  const SESSION_TIMEOUT = 5 * 60 * 1000; // 2 minutes in milliseconds
   const CREDENTIALS = { username: 'shiv', password: '8932' };
 
   // Check for session timeout on page load
@@ -300,5 +300,6 @@
       window.location.href = 'login.html';
     });
   }
+
 
 })();
